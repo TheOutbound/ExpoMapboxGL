@@ -1,0 +1,16 @@
+{
+  "builds": {
+    "ios": {
+      "preview": {
+        "workflow": "generic",
+        "distribution": "simulator"
+      }
+    },
+    "android": {
+      "preview": {
+        "workflow": "generic",
+        "gradleCommand": ":app:assembleRelease"
+      }
+    }
+  }
+}

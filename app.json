@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "ExpoMapboxGL",
+    "slug": "ExpoMapboxGL",
+    "owner": "theoutboundcollective",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.theoutbound.expomapboxgl"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.theoutbound.expomapboxgl"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
