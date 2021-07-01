@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import MapboxGL from './MapboxGL';
 import * as Location from 'expo-location';
 
@@ -22,17 +22,17 @@ export default function App() {
     })();
   }, []);
 
-
   return (
     <View style={{flex: 1}}>
-      <MapboxGL.MapView style={{flex: 1}}>
+      {!!(location) ? 
+      (<MapboxGL.MapView style={{flex: 1}}>
         <MapboxGL.UserLocation visible={true} />
         <MapboxGL.Camera
           zoomLevel={16}
           followUserMode={'normal'}
           followUserLocation
         />
-      </MapboxGL.MapView>
+      </MapboxGL.MapView>) : null}
       <StatusBar style="default" />
     </View>
   );
