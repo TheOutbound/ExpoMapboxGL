@@ -4,7 +4,28 @@
 
 This project demonstrates how to build an Expo project with native libraries using the new Expo EAS Build Service. 
 
-The Expo EAS Build Service allows, among other things, the ability to build standalone applications using the [Expo bare workflow](https://docs.expo.io/bare/exploring-bare-workflow/).  In order to use native libraries with Expo, [you must currently eject your project](https://docs.expo.io/workflow/customizing/), creating iOS and Android build folders.
+The Expo EAS Build Service enables the building of Expo Projects in the cloud. This project demonstrates that process using the [react-native-mapbox-gl](https://github.com/react-native-mapbox-gl/maps) library. In order to use Mapbox GL, you will we need an access token. Sign up and create
+one [here](https://account.mapbox.com/).
+
+<img src="/assets/mapios.jpg" width="300" alt="Rendered Mapbox GL Map on the iOS Simulator">
+
+## Using Config Plugins
+
+Due to the most excellent work by Evan Bacon and the team at Expo, you can now use the [react-native-mapbox-gl](https://github.com/react-native-mapbox-gl/maps) without Ejecting from Expo by using the expo-dev-client!!!
+
+### Steps
+
+ - Delete ./ios and ./android folders
+ - Add ios/ and android/ to your .gitignore file
+ - install the expo-dev-client
+
+
+
+
+
+## Manual Implementation
+
+ In order to use native libraries with Expo, [you must currently eject your project](https://docs.expo.io/workflow/customizing/), creating iOS and Android build folders.
 
 This project demonstrates that process using the [react-native-mapbox-gl](https://github.com/react-native-mapbox-gl/maps) library.
 
