@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import MapboxGL from './MapboxGL';
@@ -13,7 +13,7 @@ export default function App() {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== 'granted') {
-        setErrorMsg('Permission to access location was denied');
+        console.log('Permission to access location was denied');
         return;
       }
 

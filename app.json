@@ -21,7 +21,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.theoutbound.expomapboxgl"
+      "bundleIdentifier": "com.theoutbound.expomapboxgl",
+      "infoPlist": {
+        "NSLocationUsageDescription": "This app uses the location to render a map."
+      },
     },
     "plugins": [ "expo-location", "@react-native-mapbox-gl/maps" ],
     "android": {
