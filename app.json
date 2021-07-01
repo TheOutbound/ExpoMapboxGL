@@ -23,7 +23,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.theoutbound.expomapboxgl"
     },
-    "plugins": ["@react-native-mapbox-gl/maps"],
+    "plugins": [ "expo-location", "@react-native-mapbox-gl/maps" ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
